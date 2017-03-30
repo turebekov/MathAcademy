@@ -1,0 +1,69 @@
+.headtop{
+    background-color:#1635A2 !important;
+}
+.headtop p{
+    color:white !important;
+}
+.link{
+    color: white !important;
+    margin-top:15px ;
+    font-weight: bold ;
+
+}
+div .link a{
+    color:white !important;
+
+}
+.headTest{
+    background-color: #0089A6 !important;
+}
+  .subjects a{
+    color: white !important;
+    font-weight: bold;
+}
+  .subjects a:hover{
+      background-color:#97DAF1 !important;
+  }
+body{
+    background-color:#97DAF1 ;
+background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    border-bottom:2px solid #D3D3D3;
+}
+.navBut{
+    margin-left:10px;
+}
+.khan{
+    color: white !important;
+    font-size: 15px;
+    margin-top: 12px;
+
+}
+
+.middle{
+    text-align:center !important;
+    color:white;
+}
+.middleP {
+    font-family:cursive ;
+    font-size:65px;
+    font-style: italic;
+}
+.middle strong{
+
+    font-size: 20px;
+}
+.middle a{
+    margin-top: 20px;
+    border-radius:30px !important;
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    border: 2px solid white;
+    font-size: 15px;
+}
+.dropdown-menu li a{
+    color:#97DAF1 !important;
+}
