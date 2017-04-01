@@ -22,7 +22,7 @@ div .link a{
     font-weight: bold;
 }
   .subjects a:hover{
-      background-color:#97DAF1 !important;
+      /*background-color:#97DAF1 !important;*/
   }
 body{
     background-color:#97DAF1 ;
@@ -65,5 +65,5 @@ background-repeat: no-repeat;
     font-size: 15px;
 }
 .dropdown-menu li a{
-    color:#97DAF1 !important;
+    color:black !important;
 }
