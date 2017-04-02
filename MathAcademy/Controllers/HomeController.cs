@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAccess;
+using DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,11 +10,14 @@ namespace MathAcademy.Controllers
 {
     public class HomeController : BaseController
     {
+
+        
+
         public ActionResult Index()
         {
             return View();
         }
-
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
