@@ -21,9 +21,7 @@ div .link a{
     color: white !important;
     font-weight: bold;
 }
-  .subjects a:hover{
-      /*background-color:#97DAF1 !important;*/
-  }
+  
 body{
     background-color:#97DAF1 ;
 background-repeat: no-repeat;
@@ -66,4 +64,8 @@ background-repeat: no-repeat;
 }
 .dropdown-menu li a{
     color:black !important;
+}
+table p {
+    
+    font-size:16px !important;
 }
