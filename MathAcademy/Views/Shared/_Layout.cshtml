@@ -56,9 +56,9 @@
 
                                         <a href="#" class="dropdown-toggle subjects" data-toggle="dropdown">Subjects<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            @foreach (var b in @ViewBag.Courses)
+                                            @foreach (var course in @ViewBag.Courses)
                                             {
-                                                <li><a href="#">@b.Name</a></li>
+                                                <li><a href="/Course/Details/?CourseId=@course.Id">@course.Name</a></li>
                                             }
                                             
                                             
