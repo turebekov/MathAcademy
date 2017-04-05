@@ -215,6 +215,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -268,9 +269,8 @@
     <Content Include="Views\Content\Index.cshtml" />
     <Content Include="Views\Content\Create.cshtml" />
     <Content Include="Views\Content\Edit.cshtml" />
-    <Content Include="Views\Content\Content.cshtml" />
     <Content Include="Views\Course\Details.cshtml" />
-    <Content Include="Views\Content\IndexCre.cshtml" />
+    <Content Include="Views\Content\GetContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

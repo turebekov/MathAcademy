@@ -47,19 +47,23 @@
 
                 </div>
 
-                <div class="collapse navbar-collapse" id="responsive-menu">
+                <div class="navbar-collapse collapse " id="responsive-menu">
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-xs-5">
                             <div class="subjects">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown">
 
-                                        <a href="#" class="dropdown-toggle subjects" data-toggle="dropdown">Subjects<b class="caret"></b></a>
+                                        <a href="#" class="dropdown-toggle subjects" data-toggle="dropdown">Courses<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            @foreach (var course in @ViewBag.Courses)
+                                            @if (ViewBag.Courses != null)
                                             {
-                                                <li><a href="/Course/Details/?CourseId=@course.Id">@course.Name</a></li>
+                                                foreach (var course in @ViewBag.Courses)
+                                                {
+                                                    <li><a href="/Course/Details/?CourseId=@course.Id">@course.Name</a></li>
+                                                }
                                             }
+                                           
                                             
                                             
                                             <li class="divider"></li>
@@ -83,15 +87,18 @@
 
                             <div class="col-md-5 col-sm-5 col-xs-5">
                                 <p class="khan">
-                                    <i class="glyphicon glyphicon-leaf"></i> <strong> KHAN</strong> ACADEMY
+                                    <a href="/"><i class="glyphicon glyphicon-leaf"></i> <strong> MATH</strong> ACADEMY</a>
                                 </p>
                             </div>
                             <div class="col-md-2 col-sm-2 col-xs-2">
                                 <div class="link">
-                                    
+                                    <!-- 
                                     <a href="#">New User/</a>
                                     <a href="#">Sign Up </a>
+                                        -->
+                                    @Html.Partial("_LoginPartial")
                                 </div>
+                                
                             </div>
 
                         </ul>

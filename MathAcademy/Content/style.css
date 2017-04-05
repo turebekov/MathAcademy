@@ -39,6 +39,9 @@ background-repeat: no-repeat;
     margin-top: 12px;
 
 }
+body div .khan a{
+    color:white !important;
+}
 
 .middle{
     text-align:center !important;
