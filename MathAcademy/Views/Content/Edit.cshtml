@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2 style="text-align:center">Изменить</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@ViewBag.Id">
+    <div class="form-group">
+        <label for="name">Введите изменение Заголовка:</label>
+        <input type="text" name="Title" id="name" value="@ViewBag.Content.Title" class="form-control" />
+        </div>
+    <div class="form-group">
+        <label for="text"> Введите изменение Текста:</label><br />
+        <textarea name="text" id="Text" rows="3" cols="100" >@ViewBag.Content.Text</textarea>
+    </div>
+    <div class="form-group">
+        <label for="video">Измените Ссылку: </label>
+        <input type="text" name="Video" id="video" class="form-control" value="@ViewBag.Content.Text"/>
+    </div>
+            
+            
+       
+           
+            
+      
+            
+     <input type="submit" value="Изменить" class="btn btn-default"/>
+   
+</form>

@@ -1,0 +1,28 @@
+﻿@model DataModel.Cours
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h3 style="text-align:center">Контент</h3>
+    <table class="table table-condensed">
+        <tr>
+            <td><p>Название</p></td>
+            <td colspan="3"><p style="text-align:center;">Операции</p></td>
+           
+        </tr>
+        @foreach (var Content in Model.Contents)
+        {
+            <tr>
+                <td><p><a href="/Content/GetContent/?ContentId=@Content.Id">@Content.Title</a></p></td>
+                <td><p><a href="/Content/Edit/?contentId=@Content.Id">Редактировать</a></p></td> <!--peredaetsya id v controller Course , metod  -->
+                <td><p><a href="/Content/Delete/?ContentId=@Content.Id">Удалить</a></p></td>
+                
+            </tr>
+        }
+        <tr>
+            
+            </tr>
+        <h3><a href="/Content/Create/?CourseId=@ViewBag.CourseId">Добавить</a></h3>
+    </table>
+</div>

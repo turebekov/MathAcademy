@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2 style="text-align:center">Изменить </h2>
+
+<form method="post" >
+
+       <div class="form-group">
+           <label for="name">Введите изменение: </label>
+           <input type="text" name="Name" id="name" class="form-control" value="@ViewBag.Course.Name" />
+       </div>
+       
+        
+    
+    
+    <input type="submit" value="Изменить" class="btn btn-default"/>
+
+    </form>

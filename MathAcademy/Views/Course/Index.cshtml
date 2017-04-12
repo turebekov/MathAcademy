@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Courses";
+}
+
+
+<div>
+    <h3 style="text-align:center">Курсы</h3>
+    <table class="table table-condensed">
+        <tr>
+            <td><p>Название</p></td>
+            
+            <td colspan="3"><p style="text-align:center;">Операции</p></td>
+            
+        </tr>
+        @foreach (var course in ViewBag.Courses)
+        {
+            <tr>
+                <td><p>@course.Name</p></td>
+                <td><p><a href="/Course/Edit/@course.Id">Редактировать</a></p></td> <!--peredaetsya id v controller Course , metod  -->
+                <td><p><a href="/Course/Delete/@course.Id">Удалить</a></p></td>
+                <td><p><a href="/Content/Index/?courseId=@course.Id">Содержание</a></p></td>
+            </tr>
+        }
+    </table>
+</div>
+

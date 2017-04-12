@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "GetContent";
+}
+<h1>Содержание : </h1>
+<ul>
+    @foreach (var content in ViewBag.Course)
+    {
+        <li><a href="/Content/GetContent/?ContentId=@content.Id&?CourseId=@content.CourseId">@content.Title</a></li>
+    }
+</ul>
+
+
+<h2>@ViewBag.Content.Title</h2>
+<p>@ViewBag.Content.Video</p>
+<p>@ViewBag.Content.Text</p>

@@ -1,0 +1,33 @@
+﻿@model DataModel.Cours
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.Name</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+
+
+            <p>Содержание:</p>
+            <ul class="nav">
+                @foreach (var content in Model.Contents)
+            {
+                    <li><a href="/Course/Details/?contentId=@content.Id&courseId=@content.CourseId">@content.Title</a></li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-9">
+            @if (ViewBag.Content != null)
+            {
+                
+                <h2>@ViewBag.Content.Title</h2>
+                <p>@ViewBag.Content.Text</p>
+                <p>@ViewBag.Content.Video</p>
+            }
+        </div>
+       
+
+    </div>
+</div>
